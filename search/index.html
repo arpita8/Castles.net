@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<script type="text/javascript" src="/CastlesMag/LIBS/jqueryUI.js"></script> 
+	<script type="Text/javascript" src="/CastlesMag/LIBS/jqueryUIMobile.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript" src="searchDisplayHandler.js"></script>
+	<link rel="stylesheet" href="/CastlesMag/LIBS/jqueryUIstyles.css">
+	<link rel="stylesheet" href="/CastlesMag/CSS/searchstyles.css">
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/jqueryUIHandler.js"></script>
+	
+<script>
+	
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+		window.onclick = function(event) {
+  			if (!event.target.matches('.dropbtn')) {
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+     			 var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        			openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}
+	
+</script>
+
+<script>
+
+jQuery(document).ready(function(){
+
+jQuery(".fh5co-nav-toggle").click(function(){
+jQuery("ul.menu").slideToggle("slow");
+});
+
+jQuery(".mobile-filter").click(function(){
+jQuery(".show-mobile").slideToggle("slow");
+});
+
+jQuery(".searchButton").click(function(){
+jQuery(".show-mobile").slideToggle("slow");
+});
+
+jQuery(".show-close").click(function(){
+jQuery(".show-mobile").slideToggle("slow");
+});
+
+});
+
+</script>
+
+  
+	
+</head>
+
+<body>
+	<header  id="fh5co-header" role="banner">
+	
+		<div class="container">
+			<div class="row">
+		    <div class="header-inner" background="white">
+				<div class="header-inner" background="white">
+				<a href="http://castles.net/"><img src="/CastlesMag/IMAGES/internal/favicon.png" width="200" height="80"><span></span></a>
+					<nav role="navigation">
+					    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle "><i class="fa-bars"></i></a>
+						<ul class="menu">
+							<li><a href="http://castles.net/">Home</a></li>
+                            <li>
+                            <div class="dropdown">
+  							<button class="dropbtn">Properties</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://app.castlesmag.com/CastlesMag/search/">For Sale</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/rental/">For Rent</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/auction/">Auction</a>
+					        </div>
+					        </div>
+					        </li>
+					        <li>
+					        <div class="dropdown">
+  							<button class="dropbtn">Professionals</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://app.castlesmag.com/CastlesMag/Professionals/">Members</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/Professionals/">Agents</a>
+					        </div>
+					        </div>
+                            </li>
+                            
+                            <li>
+					        <div class="dropdown">
+  							<button class="dropbtn">News</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://castlesmag.com/blog/" target="_blank">Blog</a>
+    						<a href="https://castlesmag.com/castles-luxury-index/" target="_blank">Castles Luxury Index<sup>&trade;</sup></a>
+					        </div>
+					        </div>
+                            </li>
+                            <li>
+					        <div class="dropdown">
+  							<button class="dropbtn">About</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://issuu.com/castlesmag" target="_blank">Magazines</a>
+    						<a href="#">Partners</a>
+    						<a href="#">Real Estate Awards</a>
+    						<a href="https://castlesmag.com/castles-magazine-contact/" target="_blank">Contact Us</a>
+					        </div>
+					        </div>
+                            </li>
+                            <li><a href="https://app.castlesmag.com/CastlesMag/login/index.html">Login</a></li> 
+							<li><a href="http://castles.net/Join.html">Join</a></li>
+							
+						
+						</ul>
+						
+					</nav>
+				</div>
+				</div>
+				</div>
+				</div>
+		
+		
+	</header>
+
+							    
+							    
+							    
+							    
+		<div id="mainWrap">
+		<div class="controllerDiv show-mobile" id="paramControl">
+		    <p class="show-close">Close</p>
+	    <h2> </h2>
+		<p>
+			<label for="priceSelector">Price range (M):</label>
+			<input type="text" id="priceSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="priceRange"></div>
+
+		<p>
+		  <label for="bedSelector">Beds:</label>
+		  <input type="text" id="bedSelector" style='border:none' readonly>
+		</p>
+		 
+		<div class="sliderDiv" id="bedRange"></div>
+
+		<p>
+		  <label for="bathSelector">Baths:</label>
+		  <input type="text" id="bathSelector" style='border:none'  readonly>
+		</p>
+		 
+		<div class="sliderDiv" id="bathRange"></div>
+
+		<p>
+			<label for="livingAreaSelector">Living Area(Sq. Ft):</label>
+			<input type="text" id="livingAreaSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="livingAreaRange"></div>
+
+		<p>
+			<label for="lotSizeSelector">Lot Area(Sq. Ft):</label>
+			<input type="text" id="lotSizeSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="lotSizeRange"></div>
+
+		<p>
+			<label for="countrySelector">Country: </label> <br />
+  			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" id="countrySelector"></select>
+		</p>
+
+		<p>
+			<label for="stateSelector">State: </label> <br />
+  			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%;" id="stateSelector"></select>
+		</p>
+
+		<p>
+			<label for="citySelector">City: </label>
+			<input style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="citySelector">
+		</p>
+		
+		<p>
+			<label for="styleSelector">Style: </label> <br />
+			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="styleSelector"></select>
+		</p>
+
+		<p>
+			<label for="typeSelector">Type: </label> <br />
+			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="typeSelector"></select>
+		</p>
+		<p>
+<script type="text/template" id="searchTemplate">
+	<input type="text" placeholder="Keyword Search" background-color: "#fafafa" style="margin: 2vw 3vh" id="searchBar"/>
+	<input type="submit" value="Search" id="submitKeywordSearch" onclick="processKeyword('#contentControl')"/>
+	<button onclick='showAllResults()' id="showAllButton">Show All</button>
+	<input type="hidden" id="searchType" value="0"/> 
+
+</script>
+
+		</p>
+
+		<button class="searchButton" id="applyParams">Apply </button>
+		</div>
+
+
+
+
+		<div class="controllerDiv" id="contentControl">
+		     <div class="mobile-filter">
+		     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVGhD7dhNSBRhHMfxLbNDgiChENglj5oiIh0tRDQhvCjkwY6Bl0JExIsgXkIQoksgiEdRDyIIHaUuQb6FICqCGEKdSg8aIpZ+fzIDD+6DuLXr7lP/L3yQHWbwmd15eWYSlmVZ1rnyo7/BVo95HOEHRlGCoGrGMU5wGP2VFRQgo+WhKE1WoYH34wZKsRgt64Zvm1QVwts64m8uHb7BrQW+9f6GvpSkpqFjOR30T3ZxE3Ed0HIdar5tUvUVT5HR5qBBj6MCj7ETLdMOBdN97EEDd81A52JQ3cMIdKV6jxdwDzXLsqx/p+u4i1tnnwLtJb5D951fmEBws2bNnbQDv7GFg+iz7kWXvgfdRk0WPYDmZ5r+N0EVYxnamR6461fCO0vQbFUbZNtHuD2Hbz0ZQFJvsJBFn6HBbUPPMHGD0HJNOt31tcONyMmWoEFPoQFdiM+TagSTZs06TzRwl/cQyvXu4BXeYQyPYFmW9efpTWEtdKl0b1xBpemCe53fxEMEVTs0eM1MP2Ej+qw7bzlypjK0XWANGvgzqGt4Cy2bhW+bTHoC74OX74XaeT+hp7e4KvjWuypDSKoXkxfYhzbWLxcXv8/9At82maTXsXqGSbnX0KB1gneiD/Gv2Ipg0vH4ARq4S88xwaXzQ1cvneTDqINlWZb1v5ZInAK4U0vL3/i2vAAAAABJRU5ErkJggg==">
+		     </div>
+			
+		</div>
+	</div>
+
+<script type="text/template" id="listingTemplate">
+	<div id="listingWrapper" class="listingDiv">
+		<div id="listingImage"></div>
+		<div id="listingDetails" style="margin-left:0.5vw;">
+			<div>
+				<p id="listingTitle"></p>
+				<h5 id="listingAddress"></h5>
+			</div>
+			<div style="display:flex;font-size:20px;color:#999">
+				<div style="width:25%">
+					<span id="listingBedrooms"></span>
+					<p style="font-size:10px">Beds</p>
+				</div>
+				<div style="width:25%">
+					<span id="listingBaths"></span>
+					<p style="font-size:10px">Baths</p>
+				</div>
+				<div style="width:50%;text-align:right;margin-right:1vw;color:#c19b59">
+					<span id="listingPrice"></span>
+				</div>
+			</div>
+		</div>
+	</div>	
+</script>
+
+</body>
+</html>

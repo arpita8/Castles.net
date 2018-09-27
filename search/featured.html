@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<script type="text/javascript" src="featuredDisplayHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<link rel="stylesheet" href="/CastlesMag/CSS/featuredstyles.css">
+	
+</head>
+<body>
+	<header>
+		<a href="https://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		
+	</header>
+	<div class="controllerDiv" id="content"><h2 style="text-align: center; color: #999; letter-spacing: 1px">Featured Properties</h2></div>
+	<span id="searchBar" style = "margin: 20 cm 30 cm"></span>
+	<script type="text/template" id="listingTemplate">
+		<div id="listingWrapper" class="listingDiv">
+			<div id="listingImage"></div>
+			<div id="listingDetails" style="margin-left:0.5vw;">
+				<div>
+					<p id="listingTitle"></p>
+					<h5 id="listingAddress"></h5>
+				</div>
+				<div style="display:flex;font-size:20px;color:#999">
+					<div style="width:25%">
+						<span id="listingBedrooms"></span>
+						<p style="font-size:10px">Beds</p>
+					</div>
+					<div style="width:25%">
+						<span id="listingBaths"></span>
+						<p style="font-size:10px">Baths</p>
+					</div>
+					<div style="width:50%;text-align:right;margin-right:1vw;color:#c19b59">
+						<span id="listingPrice"></span>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</script>
+
+	<script type="text/template" id="searchTemplate">
+		<input type="text" placeholder="&#abc128270; Keyword Search" background-color: "#fafafa" style="margin: 200cm 30cm" id="searchBar"/>
+		<input type="submit" value="Search" id="submitKeywordSearch" onclick="processKeyword('#content')"/>
+	</script>
+
+	<script type="text/javascript">
+	$(".myBox").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+</script>
+      <div class="dropdownMenuDiv">
+        <div id="menuToggle">&#9776;</div>
+        <div id="menuContent">
+          <br />
+          <a href="https://castlesmag.com">
+              <div class="menuItem">Home</div>
+          </a>
+          <br />
+          <a href="https://app.castlesmag.com/CastlesMag/search/index.html ">
+              <div class="menuItem">Search</div>
+          </a>
+         <br />
+         <a href="https://castlesmag.com/castles-magzine-contact">
+              <div class="menuItem">Contact Us</div>
+          </a>
+          <br />
+          <a href="https://castlesmag.com/about">
+              <div class="menuItem">About Us</div>
+          </a>
+          <br />
+        </div>
+      </div>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+[31-Jul-2018 15:26:59 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:26:59 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:26:59 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:27:01 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:27:01 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:27:01 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:27:02 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:27:02 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:27:02 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:27:02 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:27:02 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:27:02 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:27:03 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:27:03 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:27:03 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:27:25 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:27:25 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:27:25 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:27:32 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 33
+[31-Jul-2018 15:27:32 UTC] PHP Warning:  mysqli::real_escape_string(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 47
+[31-Jul-2018 15:27:32 UTC] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/class-search.php on line 54
+[31-Jul-2018 15:42:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 37
+[31-Jul-2018 15:42:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[31-Jul-2018 15:42:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[31-Jul-2018 15:47:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[31-Jul-2018 16:49:12 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[31-Jul-2018 18:40:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[02-Aug-2018 15:45:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[02-Aug-2018 15:46:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[02-Aug-2018 15:46:17 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[02-Aug-2018 15:46:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[02-Aug-2018 15:47:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search.php on line 45
+[02-Aug-2018 17:36:40 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 282
+[02-Aug-2018 17:36:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 282
+[02-Aug-2018 17:37:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 282
+[02-Aug-2018 17:37:38 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 282
+[02-Aug-2018 17:37:45 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 282
+[02-Aug-2018 17:38:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:38:18 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:39:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:40:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:42:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:42:19 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:43:13 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:46:50 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:03 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:14 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:48:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:49:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:49:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281
+[02-Aug-2018 17:49:31 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, array given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/testing1/search1.php on line 281

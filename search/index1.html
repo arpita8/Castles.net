@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<script type="text/javascript" src="/CastlesMag/LIBS/jqueryUI.js"></script> 
+	<script type="Text/javascript" src="/CastlesMag/LIBS/jqueryUIMobile.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript" src="searchDisplayHandler.js"></script>
+	<link rel="stylesheet" href="/CastlesMag/LIBS/jqueryUIstyles.css">
+	<link rel="stylesheet" href="/CastlesMag/CSS/searchstyles.css">
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/jqueryUIHandler.js"></script>
+	
+<script>
+	
+	function myFunction() {
+    	document.getElementById("myDropdown").classList.toggle("show");
+	}
+		window.onclick = function(event) {
+  			if (!event.target.matches('.dropbtn')) {
+    		var dropdowns = document.getElementsByClassName("dropdown-content");
+    		var i;
+    		for (i = 0; i < dropdowns.length; i++) {
+     			 var openDropdown = dropdowns[i];
+      			if (openDropdown.classList.contains('show')) {
+        			openDropdown.classList.remove('show');
+      			}
+    		}
+  		}
+	}
+</script>
+
+  
+	 <style>
+			.hidden{
+				   display:none;
+				}
+				
+				
+				/*DropDown Menu*/
+	
+.dropbtn {
+    background-color: #172651;
+    color: white;
+    font:Times;
+    font-size: 20px;
+    border: none;
+}
+
+.dropdown:hover {
+	background-color: blue;
+    position: relative;
+    display: inline-block;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #172651;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+.dropdown-filter {
+    display: none;
+    position: absolute;
+    background-color: white;
+    
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+    z-index: 1;
+}
+
+.dropdown-filter a {
+    color: white;
+    padding: 40px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-filter a:hover {background-color: white}
+
+.dropdown:hover .dropdown-filter {
+    display: block;
+}
+    .dropbtnfilter{
+    background-color:white ;
+    color: black;
+    font:Times;
+    font-size: 20px;
+    border: none;
+    padding-top:10%;
+    font-weight:bold;
+}
+
+
+
+
+/*pagination*/
+.container {
+  margin-top: 20px;
+}
+.page {
+  display: none;
+}
+.page-active {
+  display: block;
+}
+
+</style>
+  
+	
+</head>
+
+<body>
+
+	<header  id="fh5co-header" role="banner">
+		<a href="http://mlsassistant.com/pro/jlowenstern/properties-for-sale/newton/r/f/priceMin/1015000/orderType/asc"><img src="/CastlesMag/IMAGES/internal/favicon.jpg" alt="Logo" id="logo"></a>
+		<!--<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>-->
+		<!--Menu for the search page.-->
+		<!--<div id="fh5co-page">-->
+	<!--<header>-->
+		<div class="container">
+			<div class="row">
+		    <div class="header-inner" background="white">
+				<div class="header-inner" background="white">
+					<img src="/CastlesMag/IMAGES/internal/favicon.jpg" width="200" height="80"><a href="http://castles.net/"><span></span></a>
+					<nav role="navigation">
+						<ul>
+							<li><a href="http://castles.net/">Home</a></li>
+                            <li>
+                            <div class="dropdown">
+  							<button class="dropbtn">Properties</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://app.castlesmag.com/CastlesMag/search/">For Sale</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/rental/">For Rent</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/auction/">Auction</a>
+					        </div>
+					        </div>
+                            </li>
+                            <li>
+                               							<li><a href="https://app.castlesmag.com/CastlesMag/Professionals/">Professionals</a></li>
+							<li><a href="https://issuu.com/castlesmag">Issues</a></li>
+							<li><a href="https://castlesmag.com/blog/">Blog</a></li>
+							<li><a href="https://castlesmag.com/castles-luxury-index/">Castles<sup>®</sup> Luxury Index</a></li>
+						
+						</ul>
+						
+					</nav>
+				</div>
+				</div>
+				</div>
+				</div>
+		
+		
+	</header>
+
+		
+		<div id="mainWrap">
+		<div class="controllerDiv" id="paramControl">
+		    
+		    
+		    
+		    <!-- Link added-->
+		    	<a href="http://mlsassistant.com/pro/jlowenstern/properties-for-sale/newton/r/f/priceMin/1015000/orderType/asc"><img src="/CastlesMag/IMAGES/internal/favicon.jpg" alt="Logo" id="logo"></a>
+
+			<div class="dropdown">
+		<center><button class="dropbtnfilter">&#9776;</button>	</center>				    
+		<div class="dropdown-filter"  >
+   						<h2>CASTLES<sup><span style="font-size:8px">®</span></sup> Search Portal</h2>
+		<p>
+			<label for="priceSelector">Price range (Mil):</label>
+			<input type="text" id="priceSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="priceRange"></div>
+
+		<p>
+		  <label for="bedSelector">Beds:</label>
+		  <input type="text" id="bedSelector" style='border:none' readonly>
+		</p>
+		 
+		<div class="sliderDiv" id="bedRange"></div>
+
+		<p>
+		  <label for="bathSelector">Baths:</label>
+		  <input type="text" id="bathSelector" style='border:none'  readonly>
+		</p>
+		 
+		<div class="sliderDiv" id="bathRange"></div>
+
+		<p>
+			<label for="livingAreaSelector">Living Area(Sq. Ft):</label>
+			<input type="text" id="livingAreaSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="livingAreaRange"></div>
+
+		<p>
+			<label for="lotSizeSelector">Lot Area(Sq. Ft):</label>
+			<input type="text" id="lotSizeSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="lotSizeRange"></div>
+
+		<p>
+			<label for="countrySelector">Country: </label> <br />
+  			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" id="countrySelector"></select>
+		</p>
+
+		<p>
+			<label for="stateSelector">State: </label> <br />
+  			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%;" id="stateSelector"></select>
+		</p>
+
+		<p>
+			<label for="citySelector">City: </label>
+			<input style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="citySelector">
+		</p>
+		
+		<p>
+			<label for="styleSelector">Style: </label> <br />
+			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="styleSelector"></select>
+		</p>
+
+		<p>
+			<label for="typeSelector">Type: </label> <br />
+			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="typeSelector"></select>
+		</p>   
+		<center>
+		<button class="searchButton" id="applyParams" style="Width:50%">Apply</button>
+        </center>   
+					</div>		    
+				</div>			 
+		<!-- <h2>CASTLES<sup><span style="font-size:8px">®</span></sup> Search Portal</h2>
+		<p>
+			<label for="priceSelector">Price range (Mil):</label>
+			<input type="text" id="priceSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="priceRange"></div>
+
+		<p>
+		  <label for="bedSelector">Beds:</label>
+		  <input type="text" id="bedSelector" style='border:none' readonly>
+		</p>
+		 
+		<div class="sliderDiv" id="bedRange"></div>
+
+		<p>
+		  <label for="bathSelector">Baths:</label>
+		  <input type="text" id="bathSelector" style='border:none'  readonly>
+		</p>
+		 
+		<div class="sliderDiv" id="bathRange"></div>
+
+		<p>
+			<label for="livingAreaSelector">Living Area(Sq. Ft):</label>
+			<input type="text" id="livingAreaSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="livingAreaRange"></div>
+
+		<p>
+			<label for="lotSizeSelector">Lot Area(Sq. Ft):</label>
+			<input type="text" id="lotSizeSelector" style='border:none' readonly>
+		</p>
+		<div class="sliderDiv" id="lotSizeRange"></div>
+
+		<p>
+			<label for="countrySelector">Country: </label> <br />
+  			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" id="countrySelector"></select>
+		</p>
+
+		<p>
+			<label for="stateSelector">State: </label> <br />
+  			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%;" id="stateSelector"></select>
+		</p>
+
+		<p>
+			<label for="citySelector">City: </label>
+			<input style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="citySelector">
+		</p>
+		
+		<p>
+			<label for="styleSelector">Style: </label> <br />
+			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="styleSelector"></select>
+		</p>
+
+		<p>
+			<label for="typeSelector">Type: </label> <br />
+			<select style="margin-left:5%;margin-right:5%;margin-top:2.5%;width:90%" type="text" id="typeSelector"></select>
+		</p> -->
+		<p>
+<script type="text/template" id="searchTemplate">
+	<input type="text" placeholder="Keyword Search" background-color: "#fafafa" style="margin: 2vw 3vh" id="searchBar"/>
+	<input type="submit" value="Search" id="submitKeywordSearch" onclick="processKeyword('#contentControl')"/>
+	<button onclick='showAllResults()' id="showAllButton">Show All</button>
+	<input type="hidden" id="searchType" value="0"/> 
+
+</script>
+
+		</p>
+
+	
+		</div>
+
+
+
+
+		<div class="controllerDiv" id="contentControl">
+			
+		</div>
+	</div>
+
+<script type="text/template" id="listingTemplate">
+	<div id="listingWrapper" class="listingDiv">
+		<div id="listingImage"></div>
+		<div id="listingDetails" style="margin-left:0.5vw;">
+			<div>
+				<p id="listingTitle"></p>
+				<h5 id="listingAddress"></h5>
+			</div>
+			<div style="display:flex;font-size:20px;color:#999">
+				<div style="width:25%">
+					<span id="listingBedrooms"></span>
+					<p style="font-size:10px">Beds</p>
+				</div>
+				<div style="width:25%">
+					<span id="listingBaths"></span>
+					<p style="font-size:10px">Baths</p>
+				</div>
+				<div style="width:50%;text-align:right;margin-right:1vw;color:#c19b59">
+					<span id="listingPrice"></span>
+				</div>
+			</div>
+		</div>
+	</div>	
+</script>
+
+<ul id="pagination-demo" class="pagination-lg pull-right"></ul>
+<script>
+    $('#pagination-demo').twbsPagination({
+totalPages: 5,
+// the current page that show on start
+startPage: 1,
+
+// maximum visible pages
+visiblePages: 5,
+
+initiateStartPageClick: true,
+
+// template for pagination links
+href: false,
+
+// variable name in href template for page number
+hrefVariable: '{{number}}',
+
+// Text labels
+first: 'First',
+prev: 'Previous',
+next: 'Next',
+last: 'Last',
+
+// carousel-style pagination
+loop: false,
+
+// callback function
+onPageClick: function (event, page) {
+	$('.page-active').removeClass('page-active');
+  $('#page'+page).addClass('page-active');
+},
+
+// pagination Classes
+paginationClass: 'pagination',
+nextClass: 'next',
+prevClass: 'prev',
+lastClass: 'last',
+firstClass: 'first',
+pageClass: 'page',
+activeClass: 'active',
+disabledClass: 'disabled'
+
+});
+
+
+</script>
+
+</body>
+</html>

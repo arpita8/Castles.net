@@ -1,0 +1,61 @@
+[27-Jul-2018 15:01:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 2
+[27-Jul-2018 15:03:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 2
+[27-Jul-2018 15:05:35 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:05:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:05:37 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:05:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:06:27 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:06:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:06:31 UTC] PHP Warning:  mysqli_select_db() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:06:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 11
+[27-Jul-2018 15:07:38 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 44
+[27-Jul-2018 15:07:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 47
+[27-Jul-2018 15:07:43 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 44
+[27-Jul-2018 15:07:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:47
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 47
+[27-Jul-2018 15:09:03 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 44
+[27-Jul-2018 15:09:03 UTC] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 48
+[27-Jul-2018 15:09:03 UTC] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 48
+[27-Jul-2018 15:21:27 UTC] PHP Fatal error:  Uncaught Error: Class 'search' not found in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 8
+[27-Jul-2018 15:22:47 UTC] PHP Warning:  require_once(/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php): failed to open stream: No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:22:47 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:22:52 UTC] PHP Warning:  require_once(/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php): failed to open stream: No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:22:52 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:53:08 UTC] PHP Warning:  require_once(/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php): failed to open stream: No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:53:08 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:55:28 UTC] PHP Warning:  require_once(/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php): failed to open stream: No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[27-Jul-2018 15:55:28 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[31-Jul-2018 14:50:53 UTC] PHP Warning:  require_once(/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php): failed to open stream: No such file or directory in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[31-Jul-2018 14:50:53 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/public_html/app/CastlesMag/Professionals/Testing/class-search.php' (include_path='.:/opt/cpanel/ea-php71/root/usr/share/pear') in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 5
+[31-Jul-2018 14:57:23 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 3
+[31-Jul-2018 14:57:27 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, string given in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 3
+[31-Jul-2018 14:57:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/xfmkwpty/public_html/app/CastlesMag/Professionals/Testing/search.php on line 13
