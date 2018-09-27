@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 233;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">6988888</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">8</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">10</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">3</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">2005</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">17000</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">78375</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">119 East Saddle River Road, Saddle River, NJ, <br /> United States</h2>
+			<p id="description">Iconic R&B singer Mary J Blige has revised pricing on her estate in Saddle River, New Jersey: she is now offering it for $6.99 million. The current ask represents a massive price cut from the original 2015 listing of $13 million, and a considerable loss for the Queen of Hip-Hop Soul; Blige purchased the property for $12.3 million in 2008.\n\nThe chateau is located 25 miles from Midtown Manhattan. Past and present listing details size it anywhere from 13,000 and change to a neat 20,000 square feet. The most recent listing has it as 18,250, with 8 bedrooms and 11.5 baths throughout.\n\nThe trophy home is loaded with ornament: carved wood, stone, and herringbone floors that are quite lovely. The influence is generally French country, a good balance of compulsory formality and weekend-Parisian rusticity that comes off as generally unpretentious.\n\nThere are a number of expansive entertaining spaces in the home, so the emphasis on space is paramount; the foyer is a grand introductory statement, ceilings are high, and a pair of lounges and dining rooms promise plenty of room for guests.\n\nOther standout spaces on the main floor include a wood-paneled library with a fireplace, a massive kitchen with a double island and a breakfast bay, and a family room with a fireplace. The basement is also decked out with a large recreation room, a gym, a half-court basketball court, a walk-in wine cellar, and a 14-seat movie theater.\n\nThe property is dotted with mature trees, and features a number of stone terraces, a large pool, and a poolside pavilion with catering kitchen.</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/Mary J Blige 1.jpg" alt="Mary J Blige 1.jpg"></div>
+			<h2 id="brokerName">Joshua Baris</h2>
+			<p id="brokerEmail">Josh@NJLux.com</p>
+			<p id="brokerPhone"><span id="phoneDisplay">2017711969</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

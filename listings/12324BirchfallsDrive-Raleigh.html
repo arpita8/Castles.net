@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 416;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">4999000</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">6</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">6</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">4</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">2002</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">16630</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">168141</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">1957549</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">12324 Birchfalls Drive, Raleigh, NC, <br /> United States</h2>
+			<p id="description">Nestled in the center of nearly four acres of professionally landscaped grounds, you will find a virtual oasis of privacy and comfort. Down a circular drive, large columns welcome you to an exquisite estate luxuriously appointed with the finest materials and finishes. Measuring over 16,000 square feet, the custom-built residence features a grand foyer that will make a lasting impression with its 30\' ceiling and sweeping staircase flowing over a koi pond. Rich Mahogany panels, mantel, and coffered ceiling accent the study. Built-in shelving, a fireplace, full bar featuring copper sink and wine cooler, granite counter tops, and a walk-in glass storage closet add to the room\'s drama. The sun lit living has room French doors opening to the veranda, cove lighting, and fireplace. A dramatic dining room with heavy moldings, hand painted Anaglypta paper ceiling, and stunning chandelier is off the foyer. The kitchen is perfectly designed with a paneled Sub Zero refrigerator and freezer, Miele 6 burner gas cook top, dual ovens, warmer drawer, Sub Zero beverage drawer, granite counter tops, custom cabinetry, and a butler\'s pantry. A custom mahogany door adorns the private guest suite which is wheel chair accessible. A home in and of itself, the guest suite offers a private kitchen, living room with fireplace, bedroom and full bath. Double doors open to the veranda and staircase to the terrace. Through the foyer hall lies the Master Suite, fitness room and private office. The luxurious master suite features a sitting room with views of the impeccably landscaped patio, spa-like master bath, and two walk-in closets closets. The en suite master bath offers an oversized shower, soaking tub, double vanity, separate water closet, and heated crushed limestone floor. On the second floor, a grand area prefect for entertaining overlooks the foyer and opens to the terrace above the resort-like pool area. Whether hosting a small intimate affair or a large charity event, this area has every detail covered; a double sided fireplace, built-in flat screen tv, and a full bar with granite counter tops, copper sink, ice maker and dishwasher. The second floor also offers 4 bedrooms, 4 full bathrooms, 2 powder rooms, and a game room. The bedrooms feature wall to wall carpeting, private baths and walk in closets. All bedrooms at the rear of the house feature French doors opening to the terrace. Crestron whole house monitors are located in all major rooms and all bedrooms. From these monitors, you can control the security cameras, security system, sound system, lighting, and other media. Over 300 different species of trees and shrubs were planted throughout the lush property offering color and texture year round. A dense carpet of velvety lawn can leads you to two private green areas connected by a crushed stone walkway. The privately fenced back yard encloses a heavenly outdoor experience with waterfalls, fountains, and swimming pool with private hot tub. An outdoor kitchen, two full bathrooms, and private verandas nestled in the lush greenery complete this amazing outdoor space.</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/imagereader.jpg" alt="imagereader.jpg"></div>
+			<h2 id="brokerName">Mollie Owen</h2>
+			<p id="brokerEmail">broker@gmail.com</p>
+			<p id="brokerPhone"><span id="phoneDisplay">9196022713</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

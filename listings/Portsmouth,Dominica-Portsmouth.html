@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 160;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">3052800</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">3</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">3</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">0</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">2014</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">4590</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">19814</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">Portsmouth, Dominica, Portsmouth, International, <br /> Dominica</h2>
+			<p id="description">DOMINICA – LUXURY CLIFFSIDE RESIDENCES FOR SALE IN A WORLD-CLASS ECO-LUXURY RESORT\n\nThese brand new residences are located within a highly acclaimed boutique resort that hugs the dramatic cliffside on the pristine northwestern coast of Dominica with access to three beaches.\n\nSet on the largest lots within the resort, these clifftop residences are nestled in the lush greenery of the rainforest only a 5-minute walk from the beach.\n\nThe location offers breathtaking views taking in Prince Rupert Bay, Cabrits National Park, Portsmouth, Morne Aux Diables, Guadeloupe, and Les Saintes.\n\nThe residences feature 2,190 square feet of indoor living space, including 3 bedrooms, fully-equipped kitchen and expansive indoor and outdoor living areas, including 2 decks, an elevated pool directly accessible from the bedroom, an outdoor shower, a BBQ and a hammock sofa.\n\nOnly 4 luxury cliffside residences are available within the property, all of which are designed in a style which blends a contemporary, eco-chic tropical island sensibility with a host of luxurious amenities.\n\nThe residences are beautifully finished with floors built from Guyanese Greenheart and bedroom furniture crafted from Dominican Red Cedar by local artisans.\n\nThe residences also come equipped with high speed Wi-Fi internet access, Apple TV and wireless speakers.\n\n“WORLD’S BEST BOUTIQUE HOTEL”\n\nThese residences are part of a new collection of just 42 bungalows, villas and luxury residences to be offered for sale at this prestigious boutique hotel. The resort has notched up an impressive clutch of accolades, including a Condé Nast Traveler Reader’s Choice Award, Travel & Leisure‘s “World’s Best” hotels in the Caribbean and the award of “World’s Best Boutique Hotel” 2016 by the World Boutique Hotel Awards.\n\nThe hotel is renowned for its breathtaking location, thoughtfully-designed architecture and outstanding level of service.\n\nDeveloped in harmony with the magnificent natural surroundings, this hotel also prides itself on its commitment to sustainable luxury and offers buyers the opportunity to own an eco-retreat in one of the world’s most highly acclaimed green hotels.\n\nHOTEL SERVICES & AMENITIES\n\nThese residences benefit from use of countless amenities including three swimmable and sandy beaches, a swimming pool, wellness and fitness center, yoga pavilion, art barn and riverside restaurant.\n\nA highly experienced team of staff is also on hand to provide flawless 5-star services including concierge, housekeeping, pre-arrival stocking, in-home cooking service, laundry service and 24-hour security.\n\nWhen adventure calls, a selection of equipment including mountain bikes, kayaks, stand-up paddle board, yoga mats and snorkeling and swimming gear are available for complimentary use.\n\nPROPERTY LEASING & MANAGEMENT PROGRAM\n\nOwners (as well as family and friends) can enjoy use of the residence during a number of allocated weeks each year.\n\nAlternatively, an external exchange programme enables owners to trade the weeks of personal use at the resort for a stay at other participating vacation destinations around the world.\n\nFor the remainder of the year, the residences will form part of the hotel’s for rent pool, which offers owners the opportunity to generate income from their investment.\n\nWhether in residence or off island, a management program ensures the residences are well maintained at all times.</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/Curacao 1.jpg" alt="Curacao 1.jpg"></div>
+			<h2 id="brokerName">Seventh Heaven Properties</h2>
+			<p id="brokerEmail">info@7thheavenproperties.com</p>
+			<p id="brokerPhone"><span id="phoneDisplay">19545529993</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 69;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">3500000</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">6</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">6</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">0</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">0</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">10764</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">24757</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">Tambon Taling Ngam, Amphoe Ko Samui, International, <br /> Thailand</h2>
+			<p id="description">Approximately 2,300sqm freehold house & land Southerly aspect and 96 metre water frontage 5 air-conditioned ensuited bedrooms (master with luxurious bath) Separate staff quarters 20m swimming pool with stunning views 28km from Samui International airport Short stroll to restaurants and shops of Thong Krut Offered fully furnished With breathtaking, uninterrupted views of the Gulf of Thailand and a sought after Southerly aspect, this waterfront villa, located on the southerly tip of Koh Samui Island, is simply stunning.Sitting on an almost 2,300 square metre lot, this 1,000 square metre house is set over three levels and offers five air-conditioned, ensuited bedrooms (the master with a luxurious bath), a kitchen with separate butler’s pantry and expansive open-plan living areas that connect seamlessly with the alfresco terrace.This fantastic waterfront property boasts wraparound verandas, a 20 metre infinity-edge pool and beautiful grounds incorporating water features and 180 degree views. There are also separate staff quarters incorporating a sixth air-conditioned, ensuited bedroom. Other features include sauna, separate laundry and powder room, a double garage with both stair and lift access and generous storage throughout.Laem Sor Villa comes fully furnished and is only 28 kilometres from Koh Samui International Airport and a short stroll from the shops and restaurants of Thong Krut.</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="" alt=""></div>
+			<h2 id="brokerName"></h2>
+			<p id="brokerEmail"></p>
+			<p id="brokerPhone"><span id="phoneDisplay"></span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

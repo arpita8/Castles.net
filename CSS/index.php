@@ -1,0 +1,1 @@
+<?php header("Location: http://app.castlesmag.com/CastlesMag/login/index.html")?>

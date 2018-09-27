@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 228;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">13870406</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">6</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">7</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">3</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">2013</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">12700</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">32670</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">61 Old Forest Hill Road, Toronto, International, <br /> Canada</h2>
+			<p id="description">Incomparable splendor and bygone grace are the hallmarks of this resplendent home commanding a majestic presence among other grand estates in one of Toronto’s most elite neighbourhoods – a gracious well-established enclave just minutes from downtown.\n\nStately columns and a glass front door adorned by an intricate wrought-iron grill introduce a warm welcome to the great hall where natural light freely cascades from a dramatic two-storey atrium window.\n\nThe elegant living room and dining rooms enhanced by oak herringbone hardwood floors, custom framed walls, bow windows and open log gas fireplace accented by antique Italian marble set the stage for sophisticated entertaining complemented by the well-appointed epicurean kitchen, while the family room offers an exceptionally comfortable venue for more casual gatherings.\n\nAdjoining the living room is the library embellished by an open log gas fireplace, two sets of bevelled pane glass French doors opening to the terrace and custom ceiling details. Enjoy the pleasurable ambience of the four seasons in the stunning sunroom showcasing wall-to-wall windows on three sides and expansive skylights.\n\nA dramatic staircase graced by a custom designed decorative wrought-iron railing with bronze handrail leads to a sumptuous master suite boasting an adjoining sitting room crowned with a fanciful cupola, his and hers dressing rooms and ensuites. Four additional bedrooms each with ensuites complete the private accommodations on the second level. Friends and family will appreciate the third level20-seat home theatre complete with wet bar.\n\nAdditional highlights include a lower level office, gym, billiard room, change room, walk-out to pool, plenty of space for storage and a 3-car attached garage. Meticulously manicured lawns, exquisite gardens, flowering trees and shrubs and a delightful sparkling pool create a magical paradise in the heart of the city. Truly a spectacular property.</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/old forest hill dr 1.jpg" alt="old forest hill dr 1.jpg"></div>
+			<h2 id="brokerName">Elise Kalles</h2>
+			<p id="brokerEmail">elisekalles@harveykalles.com</p>
+			<p id="brokerPhone"><span id="phoneDisplay">4164412888</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

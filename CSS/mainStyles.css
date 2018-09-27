@@ -1,0 +1,710 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+
+html, body {
+  position:relative;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding: 0;
+  margin: 0 auto;
+  font-family: "minion-pro-1","minion-pro-2",serif;
+  background-color: #0b1328;
+  background-image: url(../IMAGES/internal/background_3.jpg);
+
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="url"],
+input[type="tel"]{
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  box-shadow: none;
+  border-radius: 15px;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus{
+  outline: none;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="url"],
+input[type="tel"]{
+  padding: 10px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+input[type="text"]:focus, 
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus{
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+select {
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 7.5vh;
+  width: 10vw;
+  background: #eee;
+ }
+
+textarea{
+  border-radius: 15px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+textarea:focus{
+  outline: none;
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+input[type="checkbox"]{
+  height: 20px;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #ddd;
+}
+
+input[type="checkbox"]:after{
+  content: '\00D7';
+  display: block;
+  background: #ddd;
+  background-image: url('https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-32.png');
+  font-size: 15px;
+  height: 25px;
+  width: 25px;
+  color: transparent;
+  transition: .25s all ease-in-out;
+  border-radius: 3px;
+  line-height: 15px;
+  background-position: 0 15px;
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+input[type="checkbox"]:checked:after{
+  background-color: #3333ff;
+  background-position: 0 0;
+}
+input[type="checkbox"]:hover:after{
+  border-color: #3333ff;
+}
+
+
+
+/* menu style */
+
+#controllerDiv {	
+	height: 100vh;
+}
+
+.menu {
+  width: 20vw;
+  background-color:White;
+  float: left;
+  position: fixed;
+}
+
+.content {
+  width: 80vw;
+  float: right;
+  position: relative;
+  vertical-align: middle;
+}
+
+#mainWrap {
+  display: inline;
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu li {
+  height: 10vh;
+  font-size: 150%;
+  color: black;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-align: center;
+  display: table;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.menu li:hover {
+  color:#172651 ;
+  cursor:pointer;
+  background: #172651;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+hr{
+  margin: 0;
+  margin-top: 1px;
+}
+
+ul a {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:hover{
+  color: #ffffff;
+}
+
+/* end menu style */
+
+/* contact style */
+
+.contactDiv{
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  text-transform: uppercase;
+  font-family: sans-serif;
+  width: 60vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+}
+
+.contactHeader,
+.contactDiv p{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contactHeader {
+  background: #172651;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #f1f1f1;
+}
+
+.contactForm {
+  background: white;
+  padding: 12px;
+}
+
+.contactDiv p {
+  padding: 12px;
+}
+
+.contactDiv input, textarea {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 20px;
+  outline: 0;
+  font-size: 0.95em;
+}
+
+.contactDiv input[type="text"],
+.contactDiv textarea {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.contactDiv input[type="text"]:focus,
+.contactDiv textarea:focus {
+  border-color: #888;
+}
+
+.contactDiv input[type="submit"] {
+  background:#172651;
+  border-color: transparent;
+  color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contactDiv input[type="submit"]:hover {
+  background: #0000ff;
+}
+
+/* Buttons' focus effect */
+.contactDiv input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+#message{
+  width: 100%;
+  height: 30vh;
+  text-align: left;
+  padding: 0 auto;
+}
+
+/* end contact style */
+
+/* profile style */
+
+.profileDiv{
+  background-color: #f1f1f1;
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  width: 60vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+  color: #000005;
+}
+
+.profileImage {
+  width: 15vw;
+  height: 25vh;
+  margin-right: 2vw;
+  float:right;
+}
+
+.profileName {
+  color: #000005;
+  font-weight: normal;
+  text-align: center;
+}
+
+.profileParameters li{
+  list-style-type: none;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 1vh;
+}
+
+.passwordChangeForm {
+  display: inline-grid;
+  float: center;
+}
+
+#submitNewPassword, #editProfile {
+  background: #172651;
+  margin-top: 0.5vh;
+  border-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submitNewPassword:hover,
+#editProfile:hover {
+  background: #0000ff;
+  text-align: center;
+}
+
+#passChangeDiv {
+  align-items: center;
+  text-align: center;
+}
+
+.profileTitle {
+  background: #172651;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#editDiv {
+  text-align : center;
+}
+
+/* end profile style */
+
+/* my listings style */
+
+.listingsTitle {
+  background: #172651;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listingsDiv{
+  background-color: #f1f1f1;
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  width: 60vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+  color: #000005;
+}
+
+.editButtons{
+  background: #172651;
+  margin-top: 0.5vh;
+  border-color: transparent;
+  color: #f1f1f1;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.editButtonsClass{
+  padding: 1vw;
+}
+
+.editButtons:hover{
+  background: #0000ff;
+  text-align: center;
+}
+
+#listingsTable{
+  text-align: center;
+}
+
+.tableHeader{
+  width:20%;
+}
+
+.myListingsEditable{
+  width: 50%;
+}
+
+#pageNumber{
+  margin: auto 2vw;
+}
+
+#pagingDiv{
+  text-align: center;
+  padding: 2.5vh;
+}
+
+.listingsNavButton{
+  background: #172651;
+  margin-top: 0.5vh;
+  border-color: transparent;
+  color: #f1f1f1;
+  cursor: pointer;
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.listingsNavButton:hover{
+  background: #0000ff;
+  text-align: center;
+}
+
+.newEntry{
+  width: 80%;
+}
+
+/* end my listings style */
+
+/* add listing style */
+
+.addListingDiv{
+  background-color: White;
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  width: 60vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+  color: #000005;
+}
+
+.addListingTitle{
+  background:#172651;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #f1f1f1;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.addListingRow{
+  text-align: left;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#addListingPaging{
+  text-align: center;
+  padding: 2.5vh;
+}
+
+#submitNewListingDiv{
+  text-align: center;
+  padding: 2px 6px 3px;
+  clear: both;
+}
+
+#imagesViewingDiv{
+  float: right;
+}
+
+/* end add listing style */
+
+/* admin control style */
+
+.adminControlDiv{
+  background-color: #f1f1f1;
+  display: block;
+  justify-content: center;
+  align-items: cent
+  width: 40vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+  color: #000005;
+}
+
+.adminControlTitle{
+  background: #172651;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.adminControlNav{
+  background: #172651;
+  margin-top: 0.5vh;
+  border-color: transparent;
+  color: #f1f1f1;
+  cursor: pointer;
+  padding: 2px 6px 3px;
+  text-decoration: none;
+  margin: 0;
+  height:100%;
+  width:50%;
+  transition: all 0.3s ease;
+}
+
+.adminControlContent{
+  height: 70vh;
+  display: flex;
+}
+
+.adminControlNav:hover{
+  background: #0000ff;
+  text-align: center;
+}
+
+.usersRow{
+  text-align: center;
+}
+
+.profileParametersList{
+  list-style: none;
+  margin-left: 1vw;
+}
+/* end admin control style */
+
+/* home style */
+
+.homeDiv{
+  background-color: #f1f1f1;
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  width: 60vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+  color: #172651;
+}
+
+.homeTitle{
+  background: #172651;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+/* end home style */
+
+
+/* advertise styles */
+
+.advertiseDiv{
+  background-color: #f1f1f1;
+  display: block;
+  justify-content: center;
+  align-items: center; 
+  width: 60vw;
+  margin: 10vh auto;
+  font-size: 20px;
+  box-shadow: 1px 1px 8px #000005;
+  color: #000005;
+  padding-bottom: 5vh;
+}
+
+.advertiseTitle{
+  background: #000005;
+  padding: 20px;
+  font-size: 2.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advertisingImage{
+  height: 200px;
+  width: 350px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 2px 3px;
+}
+
+.advertisingImage:hover{
+  opacity: 0.7;
+}
+
+.advertisingOptionDiv{
+  margin-left: 2vw;
+}
+
+.advertisingOptionDiv button{
+  margin-top: 0;
+  margin-left: 5vw;
+  width: 100px;
+  height: 33px;
+  margin-top: 66px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/* end advertise styles */
+
+

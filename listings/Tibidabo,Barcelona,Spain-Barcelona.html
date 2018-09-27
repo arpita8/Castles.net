@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 102;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">39975000</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">70</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">70</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">10</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">1924</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">60000</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">60000</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">Tibidabo, Barcelona, Spain, Barcelona, International, <br /> Spain</h2>
+			<p id="description">A five-star boutique hotel with a breathtaking view of Barcelona and the Mediterranean Sea is located in the prestigious area on Mount Tibidabo. This is an ecologically clean green area with observation platforms, numerous parks, beautiful historical buildings, luxurious boutiques. The distance from the center of Barcelona is 3 km, from the airport El Prat - 20 minutes. Near the museum is CosmoCaixa, the monastery of Pedralbes, the amusement park Tibidabo.\n\n The hotel was built in 1924 by the famous Barcelona architect of the new centrist and used as an elite hotel, one of the favorite places of rest for the Catalan bourgeois. In 2001 it was restored as a boutique hotel and is a symbol of style and prestige. After the restoration, it retained its original façade and 19th century decor elements. The hotel features original statues of British sculptors and paintings by famous Catalan artists. 70 design rooms are presented in Art Nouveau style with author&#39;s furniture. Exquisite SIUTE designed by renowned designers - Dale Keller, Federico Crocella, Cristina Macaya, Ben Jacober, Yannic Vu, Rebecca Horn. On the territory of the boutique hotel there are two stylish, world-famous bar with live music, a restaurant, three banquet halls - where you can enjoy delicious dishes of Catalan, Spanish and Mediterranean cuisine. On Sundays, a brunch is served in the restaurant.\n\n For lovers of a healthy lifestyle, there is a spa, a hot tub and a pool with a chill out area, a steam bath and a modern fitness center. Three spacious conference rooms and a salon for weddings with panoramic views of the city and the coast will make any holiday unforgettable.\n\nLocation: \nFirst line from the sea/lake\n\nBasic parameters: \nFurnished: 25 \nHigh ceiling \nSauna \nJacuzzi \nSwimming pool \nMaids room \nAir conditioner \nWindows: 28 \nLandscape design \nGarden \nOutdoor parking \nSecurity/Secured area \nVideo surveillance \nStars: 5 \nRooms: 70 \nRestaurants \nFitnes \nSPA\n\nView characteristics: \nSea/ocean/bay/river view \nCity view\n\nLeisure and Infrastructure in 2km: \nSupermarket \nRestaurants / cafes \nMuseum \nPark\n\nDistances: \nDistance to the downtown: 3</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/Dubai Marina 1.jpeg" alt="Dubai Marina 1.jpeg"></div>
+			<h2 id="brokerName">Victoria Nazarenko</h2>
+			<p id="brokerEmail">info@mgroupestate.com</p>
+			<p id="brokerPhone"><span id="phoneDisplay">+37126445557</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

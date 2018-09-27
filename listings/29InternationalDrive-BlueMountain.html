@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 235;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">6750000</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">6</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">6</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">1</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">2000</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">15000</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">101495</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">29 International Drive, Blue Mountain, International, <br /> Turks and Caicos</h2>
+			<p id="description">If there was ever a property that speaks to the positive influence the community has played in the development of the Turks and Caicos Islands these past 20 years then it is Stargazer. A home that has hosted more events, delivered more unforgettable evenings of unbridled joy than arguably any other. The design, the decor, the energy of this palatial residence speaks to rich culture and abundant history. Stargazer is respectful of it\'s environment - it\'s role through the years to enhance the lives of many and provide pleasure. The offering has been adjusted to just $450/sqft, Stargazer must now finally and surely be recognized as the incredible investment opportunity that it is. A home, a business, an historic residence in these Turks and Caicos Islands.\n\nStargazer offers a pampering experience indoors and out. There are three bedrooms in the villa\'s main house, two in the guest cottage and one in the poolside cottage. In the main house, all three bedrooms have king beds and en-suite bathrooms and two have balconies as well. In the guest cottage, the two bedrooms have a king bed and queen bed, respectively, and share a bathroom. The poolside cottage\'s bedroom has a queen bed. Not only are the villa\'s rooms air-conditioned, they have breezy, European-influenced decor. The open-plan living area is covered by a whitewashed cathedral ceiling and has plenty of plump white sofas and wicker chairs, but is grounded by exotic pieces like Persian rugs and Chinese-style chests. Enjoy meals at the two dining tables or the breakfast bar. The state-of-the-art kitchen makes cooking a pleasure with high-end appliances and spacious layout. The gated property includes a cutting garden, fruit trees, a grotto and waterfall, a three-zone infinity pool, hot tub and sauna-not to mention beach access. Up your game on the tennis courts; racquets and a ball gatherer are available. If you\'re not relaxing or dining on the terrace or grilling outside, enjoy the games room, pool table, home theatre, dance and Pilates studios and Wi-Fi access indoors. With the sea stretching in front and the sky stretching overhead, the views seem infinite at Stargazer. Whether you\'re sunbathing on the terrace, swimming in the infinity pool, or strolling the lush gardens, this luxurious beachfront villa puts you in touch with the natural beauty of Thompson Cove on the island of Providenciales. With six bedrooms and a fully equipped guest house, it offers privacy, comfort and quiet, too. Stargazer is very close to the heart of Providenciales, just a 5-minute drive from the airport and a 12-minute drive from the golf course.</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/Turks and Caicos 1.jpg" alt="Turks and Caicos 1.jpg"></div>
+			<h2 id="brokerName">Ian Hurdle</h2>
+			<p id="brokerEmail">Ian.Hurdle@TheAgencyRE.tc</p>
+			<p id="brokerPhone"><span id="phoneDisplay">16493322618</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

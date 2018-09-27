@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Castles Broker Access</title>
+    <link rel="stylesheet" type="text/css" href="/CastlesMag/CSS/loginStyles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png">
+    
+</head>
+<body>
+	<div class="login">
+		
+		<h2 class="login-header">Log in</h2>
+		<form action="checkUser.php" method="POST" class="login-container">
+			<p color="red"> Username and password mismatch. Please retry.</p>
+			<p>
+				<label>Username: </label>
+				<input type="text" id="user" name="user" placeholder="Enter Username" required/>
+				<a href="userNameIndex.html">Forgot Username?</a>
+			</p>
+			<p>
+				<label>Password:</label>
+				<input type="password" id="pass" name="pass" placeholder="Enter Password" required/>
+				<a href="passwordResetIndex.html">Forgot password?</a>
+			</p>
+			<p>
+				<input type="submit" id="btn" value="Login" />
+			</p>
+			</form>
+	</div>
+
+
+
+</body>
+</html>

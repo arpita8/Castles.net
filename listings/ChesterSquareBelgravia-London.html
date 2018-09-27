@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Castles search portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/CastlesMag/CSS/resultstyles.css">
+	<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<script type="text/javascript">var id = 135;</script>
+	<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/searchResultHandler.js"></script>
+	<script type="text/javascript" src="/CastlesMag/search/slideshowHandler.js"></script>
+</head>
+<body>
+	<header>
+		<a href="http://castlesmag.com"><img src="/CastlesMag/IMAGES/internal/favicon.png" alt="Logo" id="logo"></a>
+		<p class="castlesHeader">Castles<sup><span style="font-size:12px; vertical-align:middle">&reg;</span></sup> Magazine</p>
+	</header>
+	<div id="wrap">
+	<div class="slideshow-container"></div>
+	<div id="dotControl"></div>
+	
+	<div id="content" style="display:flex;margin-bottom:10vh">
+
+		<div id="params" style="width:33.33%;" class="contentDiv">
+			<table id="paramsTable">
+				<tr id="price"><td>PRICE <span class="listingValue">$<span id="priceDisplay">36976800</span></span></td></tr>
+				<tr id="bedrooms" class="alterTr"><td>BEDROOMS <span class="listingValue">8</span></td></tr>
+				<tr id="fullBaths"><td>FULL BATHS <span class="listingValue">7</span></td></tr>
+				<tr id="halfBaths" class="alterTr"><td>HALF BATHS <span class="listingValue">0</span></td></tr>
+				<tr id="yearBuilt"><td>YEAR BUILT <span class="listingValue">1844</span></td></tr>
+				<tr id="livingArea" class="alterTr"><td>LIVING AREA <span class="listingValue"><span class="parameterDisplay">7761</span></span></td></tr>
+				<tr id="lotSize"><td>LOT SIZE <span class="listingValue"><span class="parameterDisplay">7761</span></span></td></tr>
+				<tr id="mls" class="alterTr"><td>MLS <span class="listingValue">0</span></td></tr>
+			</table>
+		</div>
+
+		<div id="details" style="width:33.33%" class="contentDiv">
+			<h2 id="address">Chester Square Belgravia, London, International, <br /> United Kingdom</h2>
+			<p id="description">One of the most impressive newly refurbished\nhouses in Belgravia with a lift and double garage.\nDrawing room\nDining room \nKitchen/Breakfast room \nSitting room\nEight bedrooms \nSeven bath/shower rooms \nCinema room\nGym \nRoof terrace\nDouble garage\nLocated on the south eastern corner of Chester\nSquare and enjoying the quietest position, this is a\nsubstantial and considerably larger than average\nfamily house. The house uniquely benefits from a\ndouble mansard allowing six bedrooms upstairs\nand an unusually large mews house to the rear,\nwith a passenger lift to all floors. This Grade II\nlisted house has been the subject of an extensive\nrenovation under the expert supervision and\nproject management of renowned designers\nWilben. The extent of the quality of finish,\ndesign and specification is second to none, with\nair conditioning, Lutron lighting, Control4 fully\nautomated audio visual, passenger lift, under floor\nheating, comprehensive security, surround sound\ncinema and a large double garage. This truly\nturnkey house, with exquisite craftsmanship and\nluxurious finishes, can be occupied immediately.\nChester Square is located in the heart of Belgravia,\nimmediately to the south of Eaton Square. It is\none of the most highly regarded garden squares\nin London with its famous white stucco terraces,\noverlooking a large expanse of private lawned\ngardens, enjoyed only by the residents of the\nsquare. Immediately nearby, there are a large\nnumber of exclusive speciality shops, restaurants\nand recreational amenities in Elizabeth Street,\nEccleston Street and Lower Belgrave Street. To\nthe west and also very nearby, there are first\nclass facilities in Sloane Square, including Peter\nJones, the international designer labels of Sloane\nStreet and the galleries and antique shops of\nPimlico Road. The gardens of Belgrave Square,\nwith a tennis court and childrens’ play area, are\nlocated just to the north, which residents can\nuse (subject to certain conditions laid down by\nGrosvenor Estate).</p>
+			<br />
+			<br />
+			<h3 style="letter-spacing: 1px">For inquiries of any nature, please use the contact form below and our experts will assist you as soon as possible.</h3>
+			<form id="detailsForm" action="#" onsubmit="return sendInquiry()">
+				<input type="text" name="nameInput" id="nameInput" placeholder="Name" required/><br />
+				<input type="email" name="emailInput" id="emailInput" placeholder="name@example.com" required/><br />
+				<input type="text" name="addressInput" id="addressInput" placeholder="Address(optional)"/><br />
+				<input type="tel" name="phoneInput" id="phoneInput" placeholder="123-456-7890 (Please include dashes)" pattern="^\d{3}-\d{3}-\d{4}$" required/><br />
+				<input type="text" name="messageInput" id="messageInput" placeholder="Message" required />
+				<input type="submit" value="Submit" id="submitButton" />
+			</form>
+		</div>
+
+		<div id="profile" class="contentDiv">
+			<div id="brokerImageDiv"><img id="brokerImage" src="/CastlesMag/IMAGES/uploads/users/JamesForbes.jpg" alt="JamesForbes.jpg"></div>
+			<h2 id="brokerName">James Forbes</h2>
+			<p id="brokerEmail">info@struttparker.com</p>
+			<p id="brokerPhone"><span id="phoneDisplay">442075912201</span></p>
+			<a id="brokerWebsite" href=""></a>
+		</div>
+
+	</div>
+
+</div>
+
+		<script type="text/template" id="dropdownMenuTemplate">
+			<div class="dropdownMenuDiv">
+				<div id="menuToggle">&#9776;</div>
+				<div id="menuContent">
+					<br />
+					<div class="menuItem"><a href="https://castlesmag.com">Home</a></div><hr />
+					<div class="menuItem"><a href="https://app.castlesmag.com/CastlesMag/search/index.html">Search</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/castles-magazine-contact/">Contact Us</a></div><hr />
+					<div class="menuItem"><a href="https://castlesmag.com/about">About Us</a></div>
+					<br />
+					<br />
+				</div>
+	       	</div>
+	    </script>	
+
+	    <script type="text/template" id="slideTemplate">
+		<div class="mySlides">
+			<img id="listingImage" />
+		</div>
+	</script>
+
+	<script type="text/template" id="controlsTemplate">
+		<div class="numbertext"></div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<br>
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<title>Login</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!--<script type="text/javascript" src="/CastlesMag/LIBS/jquery.js"></script>-->
+	<!--<script type="text/javascript" src="/CastlesMag/LIBS/jqueryUI.js"></script> -->
+	<!--<script type="Text/javascript" src="/CastlesMag/LIBS/jqueryUIMobile.js"></script>-->
+	<link rel="shortcut icon" type="image/x-icon" href="/CastlesMag/IMAGES/internal/favicon.png"> 
+	<link rel="stylesheet" href="/CastlesMag/LIBS/jqueryUIstyles.css">
+	<link rel="stylesheet" href="/CastlesMag/CSS/searchstyles.css">
+	<!--<script type="text/javascript" src="/CastlesMag/main/JS/functions.js"></script>-->
+	<!--<script type="text/javascript" src="/CastlesMag/search/jqueryUIHandler.js"></script>-->
+	
+	<script src="validation.js"></script>
+
+  <style>
+  
+  
+           
+            
+            body{
+                font-family: "Times New Roman", Times, serif;
+            }
+              input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            
+            
+            input[type=password], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            
+            input[type=submit] {
+                background-color:#172651 ;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: 80%;
+                height: 80%;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #172651;
+            }
+            
+            .container {
+                border-radius: 5px;
+                /*background-color:#172651 ;*/
+                /*padding: 20px;*/
+            }
+            
+            .dropbtn {
+                background-color: #172651;
+                color: white;
+                font:Times;
+                font-size: 20px;
+                border: none;
+            }
+            
+            .dropdown:hover {
+            	background-color: blue;
+                position: relative;
+                display: inline-block;
+            
+            }
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #172651;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            
+            .dropdown-content a {
+                color: white;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            
+            .dropdown-content a:hover {background-color: #ddd}
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+            .dropdown:hover .dropbtn {
+                background-color: blue;
+            
+            }
+            
+        form li {
+        list-style: none;
+        }
+
+</style>
+ 
+<body>
+
+<header  id="fh5co-header" role="banner">
+		
+		<div class="container">
+			<div class="row">
+		    <div class="header-inner" background="white">
+				<div class="header-inner" background="white">
+				<a href="http://castles.net/"><img src="/CastlesMag/IMAGES/internal/favicon.png" width="200" height="80"><span></span></a>
+					<nav role="navigation">
+					    <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle "><i class="fa-bars"></i></a>
+						<ul class="menu">
+							<li><a href="http://castles.net/">Home</a></li>
+                            <li>
+                            <div class="dropdown">
+  							<button class="dropbtn">Properties</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://app.castlesmag.com/CastlesMag/search/">For Sale</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/rental/">For Rent</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/auction/">Auction</a>
+					        </div>
+					        </div>
+					        </li>
+					        <li>
+					        <div class="dropdown">
+  							<button class="dropbtn">Professionals</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://app.castlesmag.com/CastlesMag/Professionals/">Members</a>
+    						<a href="https://app.castlesmag.com/CastlesMag/Professionals/">Agents</a>
+					        </div>
+					        </div>
+                            </li>
+                            
+                            <li>
+					        <div class="dropdown">
+  							<button class="dropbtn">News</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://castlesmag.com/blog/" target="_blank">Blog</a>
+    						<a href="https://castlesmag.com/castles-luxury-index/" target="_blank">Castles Luxury Index<sup>&trade;</sup></a>
+					        </div>
+					        </div>
+                            </li>
+                            <li>
+					        <div class="dropdown">
+  							<button class="dropbtn">About</button>
+  						    <div class="dropdown-content">
+   						    <a href="https://issuu.com/castlesmag" target="_blank">Magazines</a>
+    						<a href="#">Partners</a>
+    						<a href="#">Real Estate Awards</a>
+    						<a href="https://castlesmag.com/castles-magazine-contact/" target="_blank">Contact Us</a>
+					        </div>
+					        </div>
+                            </li>
+                            <li><a href="https://app.castlesmag.com/CastlesMag/login/index.html">Login</a></li> 
+							<li><a href="http://castles.net/Join.html">Join</a></li>
+							
+						
+						</ul>
+						
+					</nav>
+				</div>
+				</div>
+				</div>
+				</div>
+		
+		
+	</header>
+
+
+<div class="w3-sidebar w3-bar-block white" style="width:70%; padding-right: 2%; padding-left: 2%; padding-top:15%">
+  <div class="w3-container w3-dark-blue">
+    <center><h1>Welcome to Castles Real Estate Network</h1></center>
+  </div>
+
+    <p>Thank you for visiting our website. You are welcome to browse this collection of international properties. They are represented by some of the most esteemed real estate professionals in the industry.
+    For a more personalized user experience, sign up for a free account and receive these benefits:</p>
+    <p>
+        <ul>
+            <li>Comment on agent blog posts.</li>
+            <li>Save and manage property searches.</li>
+            <li>Like homes, professionals, developments and vacation rentals.</li>
+            <li>Bookmark your favorite homes, developments and vacation rentals.</li>
+            <li>Bookmark your favorite luxury professionals.</li>
+            <li>Receive real estate industry information through our Week in Review Newsletter.</li>
+
+        </ul>
+    </p>
+<center><a href="http://www.castles.net/">Learn more</a></center>
+        </div>
+ 
+  
+
+
+
+
+<div style="margin-left:70%;padding-top:10%;" >
+
+<div class="w3-container">
+<center>
+    <h2>Login</h2>
+
+ 
+   
+<div style="align:left;">
+ <form action="checkUser.php" method="POST" class="login-container">
+		   
+			<p style="align:left;">
+				<label>Username </label>
+				<input type="text" id="user" name="user" placeholder="Enter Username" required/>
+			<u>	<a href="userNameIndex.html">Forgot Username?</a></u>
+			</p>
+			<p>
+				<label>Password</label>
+				<input type="password" id="pass" name="pass" placeholder="Enter Password" required/>
+			<u>	<a href="passwordResetIndex.html">Forgot password?</a></u>
+			</p>
+			<p>
+				<input type="submit" id="btn" value="Login" />
+			</p>
+	
+		</form>
+ 
+</div>
+
+</div>
+</div>
+      
+</body>
+</html>
